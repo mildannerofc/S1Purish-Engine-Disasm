@@ -2,6 +2,7 @@
 A disassembly of Sonic 1 with Purish modifications in Engine.
 ## Credits
 * Mildanner - Disassembly Owner, Palette Editor
+* SCHG - Fixing & Improving Game Code
 * Vladikcomper - Mega PCM 2
 * Selbi - Sonic CD SFX Jump
 * ProjectFM - Jump Dash Code
@@ -18,3 +19,5 @@ A disassembly of Sonic 1 with Purish modifications in Engine.
 * ClownMapEd - Simple art editing
 * HivePal - Change palettes
 * SMPSConv - Music conversions
+
+Original disassembly is in [here](https://github.com/sonicretro/s1disasm)
