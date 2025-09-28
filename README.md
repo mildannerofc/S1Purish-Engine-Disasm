@@ -28,6 +28,7 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Hivebrain - Original disassembly
 * Sonic Retro - GitHub disassembly
 * SoullessSentinel - Sonic 1 ASCII Level Select Font
+* PeanutNoceda - Unique HUD Life Counter inspiration
 * Louplayer - Custom Sonic Monitor Sprite
 * Nineko - Functional eggman monitor
 ## Programs used
