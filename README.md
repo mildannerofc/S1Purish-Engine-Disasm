@@ -1,10 +1,11 @@
 # Sonic 1 Purish Engine
 A disassembly of Sonic 1 with Purish modifications in Engine.
 
-This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner made by modifying it how does he like to be used in a ROM Hack Structure.
-## Known modifications in engine
+This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner made by modifying it how does he like to be used in a ROM Hack Structure but with improved stuff.
+## Known Modifications in Engine
 * PAL fix SMPS;
 * Sonic Jump Dash Ability;
+* Clap and Cymbal added to Mega PCM;
 * Extra music 94-9F;
 * Clean palette in half;
 * Smooth special stage;
@@ -13,6 +14,7 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Sonic 1 Prototype Drums;
 * Extended Debug Mode;
 * New 2 water palette for Labyrinth Zone and SBZ 3;
+* Eggman and S Monitor are now functional;
 * Debug Mode fixed placing items.
 ## Credits
 * Mildanner - Disassembly Owner, Palette Editor
@@ -27,7 +29,9 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Sonic Retro - GitHub disassembly
 * SoullessSentinel - Sonic 1 ASCII Level Select Font
 * Louplayer - Custom Sonic Monitor Sprite
+* Nineko - Functional eggman monitor
 ## Programs used
+* Audacity - PCM exporting
 * Notepad++ - Coding
 * Paint.NET - Manual image editing
 * Flex2 - Sprite editing
