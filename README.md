@@ -10,9 +10,11 @@ A disassembly of Sonic 1 with Purish modifications in Engine.
 * Hivebrain - Original disassembly
 * Sonic Retro - GitHub disassembly
 * SoullessSentinel - Sonic 1 ASCII Level Select Font
+* Louplayer - Custom Sonic Monitor Sprite
 ## Programs used
 * Notepad++ - Coding
 * Paint.NET - Manual image editing
 * Flex2 - Sprite editing
 * ClownMapEd - Simple art editing
 * HivePal - Change palettes
+* SMPSConv - Music conversions
