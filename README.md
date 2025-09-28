@@ -1,9 +1,24 @@
 # Sonic 1 Purish Engine
 A disassembly of Sonic 1 with Purish modifications in Engine.
+
+This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner made by modifying it how does he like to be used in a ROM Hack Structure.
+## Known modifications in engine
+* PAL fix SMPS;
+* Sonic Jump Dash Ability;
+* Extra music 94-9F;
+* Clean palette in half;
+* Smooth special stage;
+* ASCII Level Select;
+* Speed Cap Removed;
+* Sonic 1 Prototype Drums;
+* Extended Debug Mode;
+* New 2 water palette for Labyrinth Zone and SBZ 3;
+* Debug Mode fixed placing items.
 ## Credits
 * Mildanner - Disassembly Owner, Palette Editor
 * SCHG - Fixing & Improving Game Code
 * Vladikcomper - Mega PCM 2
+* Mercury - ReadySonic
 * Selbi - Sonic CD SFX Jump
 * ProjectFM - Jump Dash Code
 * Hame - Mean Bean SMPS Port
