@@ -2120,6 +2120,8 @@ Tit_ChkLevSel:
 		beq.w	PlayLevel	; if not, play level
 		btst	#bitA,(v_jpadhold1).w ; check if A is pressed
 		beq.w	PlayLevel	; if not, play level
+		move.b	#bgm_Options,d0
+		bsr.w	PlaySound_Special ; play credits music
 
 		moveq	#palid_LevelSel,d0
 		bsr.w	PalLoad	; load level select palette
