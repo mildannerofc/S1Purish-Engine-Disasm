@@ -28,6 +28,7 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Hame - Mean Bean SMPS Port
 * Techokami - Custom Font HUD
 * CartoonsAnimate22 - Sprites
+* DarkShamilKhan - Inspiration
 * Hivebrain - Original disassembly
 * Sonic Retro - GitHub disassembly
 * RetroKoH - Help with Extended Debug Mode and some guides
