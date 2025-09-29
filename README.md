@@ -1,4 +1,4 @@
-<img width="640" height="480" alt="s1built000" src="https://github.com/user-attachments/assets/1bef8e51-2805-4982-8887-b92dbdc0a5ce" />
+<img width="640" height="480" alt="s1built000" src="https://github.com/user-attachments/assets/f938e3e5-6a7b-499c-b46e-a451b4aac77d" />
 
 # Sonic 1 Purish Engine
 A disassembly of Sonic 1 with Purish modifications in Engine.
