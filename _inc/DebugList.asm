@@ -68,10 +68,10 @@ dbug:	macro map,object,subtype,frame,vram
 	dbug	Map_Monitor,	id_Monitor,	2,	4,	make_art_tile(ArtTile_Monitor,0,0) ; Sonic 1UP
 	dbug	Map_Monitor,	id_Monitor,	1,	3,	make_art_tile(ArtTile_Monitor,0,0) ; Eggman
 	dbug	Map_Monitor,	id_Monitor,	8,	10,	make_art_tile(ArtTile_Monitor,0,0) ; Goggles
-	dbug	Map_Spring,		id_Springs,			2,		0,		make_art_tile(ArtTile_Spring_Horizontal,1,0)	; Yellow Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$12,	3,		make_art_tile(ArtTile_Spring_Vertical,1,0)		; Yellow Vertical Spring
-	dbug	Map_Spring,		id_Springs,			0,		0,		make_art_tile(ArtTile_Spring_Horizontal,0,0)	; Red Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$10,	3,		make_art_tile(ArtTile_Spring_Vertical,0,0)		; Red Vertical Spring
+	dbug	Map_Spring,	id_Springs,	0,	0,	make_art_tile(ArtTile_Spring_Horizontal,0,0)
+	dbug	Map_Spring,	id_Springs,	2,	0,	make_art_tile(ArtTile_Spring_Horizontal,1,0)
+	dbug	Map_Spring,	id_Springs,	$10,	3,	make_art_tile(ArtTile_Spring_Vertical,0,0)
+	dbug	Map_Spring,	id_Springs,	$12,	3,	make_art_tile(ArtTile_Spring_Vertical,1,0)
 	dbug	Map_Jaws,	id_Jaws,	8,	0,	make_art_tile(ArtTile_Jaws,1,0)
 	dbug	Map_Burro,	id_Burrobot,	0,	2,	make_art_tile(ArtTile_Burrobot,0,1)
 	dbug	Map_Harp,	id_Harpoon,	0,	0,	make_art_tile(ArtTile_LZ_Harpoon,0,0)
@@ -120,10 +120,10 @@ dbug:	macro map,object,subtype,frame,vram
 	dbug	Map_Monitor,	id_Monitor,	8,	10,	make_art_tile(ArtTile_Monitor,0,0) ; Goggles
 	dbug	Map_Buzz,	id_BuzzBomber,	0,	0,	make_art_tile(ArtTile_Buzz_Bomber,0,0)
 	dbug	Map_Spike,	id_Spikes,	0,	0,	make_art_tile(ArtTile_Spikes,0,0)
-	dbug	Map_Spring,		id_Springs,			2,		0,		make_art_tile(ArtTile_Spring_Horizontal,1,0)	; Yellow Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$12,	3,		make_art_tile(ArtTile_Spring_Vertical,1,0)		; Yellow Vertical Spring
-	dbug	Map_Spring,		id_Springs,			0,		0,		make_art_tile(ArtTile_Spring_Horizontal,0,0)	; Red Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$10,	3,		make_art_tile(ArtTile_Spring_Vertical,0,0)		; Red Vertical Spring
+	dbug	Map_Spring,	id_Springs,	0,	0,	make_art_tile(ArtTile_Spring_Horizontal,0,0)
+	dbug	Map_Spring,	id_Springs,	2,	0,	make_art_tile(ArtTile_Spring_Horizontal,1,0)
+	dbug	Map_Spring,	id_Springs,	$10,	3,	make_art_tile(ArtTile_Spring_Vertical,0,0)
+	dbug	Map_Spring,	id_Springs,	$12,	3,	make_art_tile(ArtTile_Spring_Vertical,1,0)
 	dbug	Map_Fire,	id_LavaMaker,	0,	0,	make_art_tile(ArtTile_MZ_Fireball,0,0)
 	dbug	Map_Brick,	id_MarbleBrick,	0,	0,	make_art_tile(ArtTile_Level,2,0)
 	dbug	Map_Geyser,	id_GeyserMaker,	0,	0,	make_art_tile(ArtTile_MZ_Lava,3,0)
@@ -171,11 +171,10 @@ dbug:	macro map,object,subtype,frame,vram
 	dbug	Map_Circ,	id_CirclingPlatform, 0,	0,	make_art_tile(ArtTile_Level,2,0)
 	dbug	Map_Stair,	id_Staircase,	0,	0,	make_art_tile(ArtTile_Level,2,0)
 	dbug	Map_Fan,	id_Fan,		0,	0,	make_art_tile(ArtTile_SLZ_Fan,2,0)
-	dbug	Map_Seesaw,	id_Seesaw,	0,	0,	make_art_tile(ArtTile_SLZ_Seesaw,0,0)
-	dbug	Map_Spring,		id_Springs,			2,		0,		make_art_tile(ArtTile_Spring_Horizontal,1,0)	; Yellow Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$12,	3,		make_art_tile(ArtTile_Spring_Vertical,1,0)		; Yellow Vertical Spring
-	dbug	Map_Spring,		id_Springs,			0,		0,		make_art_tile(ArtTile_Spring_Horizontal,0,0)	; Red Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$10,	3,		make_art_tile(ArtTile_Spring_Vertical,0,0)		; Red Vertical Spring
+	dbug	Map_Spring,	id_Springs,	0,	0,	make_art_tile(ArtTile_Spring_Horizontal,0,0)
+	dbug	Map_Spring,	id_Springs,	2,	0,	make_art_tile(ArtTile_Spring_Horizontal,1,0)
+	dbug	Map_Spring,	id_Springs,	$10,	3,	make_art_tile(ArtTile_Spring_Vertical,0,0)
+	dbug	Map_Spring,	id_Springs,	$12,	3,	make_art_tile(ArtTile_Spring_Vertical,1,0)
 	dbug	Map_Fire,	id_LavaMaker,	0,	0,	make_art_tile(ArtTile_SLZ_Fireball,0,0)
 	dbug	Map_Scen,	id_Scenery,	0,	0,	make_art_tile(ArtTile_SLZ_Fireball_Launcher,2,0)
 	dbug	Map_Bomb,	id_Bomb,	0,	0,	make_art_tile(ArtTile_Bomb,0,0)
@@ -202,10 +201,10 @@ dbug:	macro map,object,subtype,frame,vram
 	dbug	Map_Monitor,	id_Monitor,	1,	3,	make_art_tile(ArtTile_Monitor,0,0) ; Eggman
 	dbug	Map_Monitor,	id_Monitor,	8,	10,	make_art_tile(ArtTile_Monitor,0,0) ; Goggles
 	dbug	Map_Spike,	id_Spikes,	0,	0,	make_art_tile(ArtTile_Spikes,0,0)
-	dbug	Map_Spring,		id_Springs,			2,		0,		make_art_tile(ArtTile_Spring_Horizontal,1,0)	; Yellow Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$12,	3,		make_art_tile(ArtTile_Spring_Vertical,1,0)		; Yellow Vertical Spring
-	dbug	Map_Spring,		id_Springs,			0,		0,		make_art_tile(ArtTile_Spring_Horizontal,0,0)	; Red Horizontal Spring
-	dbug	Map_Spring,		id_Springs,			$10,	3,		make_art_tile(ArtTile_Spring_Vertical,0,0)		; Red Vertical Spring
+	dbug	Map_Spring,	id_Springs,	0,	0,	make_art_tile(ArtTile_Spring_Horizontal,0,0)
+	dbug	Map_Spring,	id_Springs,	2,	0,	make_art_tile(ArtTile_Spring_Horizontal,1,0)
+	dbug	Map_Spring,	id_Springs,	$10,	3,	make_art_tile(ArtTile_Spring_Vertical,0,0)
+	dbug	Map_Spring,	id_Springs,	$12,	3,	make_art_tile(ArtTile_Spring_Vertical,1,0)
 	dbug	Map_Roll,	id_Roller,	0,	0,	make_art_tile(ArtTile_Roller,0,0)
 	dbug	Map_Light,	id_SpinningLight, 0,	0,	make_art_tile(ArtTile_Level,0,0)
 	dbug	Map_Bump,	id_Bumper,	0,	0,	make_art_tile(ArtTile_SYZ_Bumper,0,0)
@@ -237,6 +236,10 @@ dbug:	macro map,object,subtype,frame,vram
 	dbug	Map_Monitor,	id_Monitor,	2,	4,	make_art_tile(ArtTile_Monitor,0,0) ; Sonic 1UP
 	dbug	Map_Monitor,	id_Monitor,	1,	3,	make_art_tile(ArtTile_Monitor,0,0) ; Eggman
 	dbug	Map_Monitor,	id_Monitor,	8,	10,	make_art_tile(ArtTile_Monitor,0,0) ; Goggles
+	dbug	Map_Spring,	id_Springs,	0,	0,	make_art_tile(ArtTile_Spring_Horizontal,0,0)
+	dbug	Map_Spring,	id_Springs,	2,	0,	make_art_tile(ArtTile_Spring_Horizontal,1,0)
+	dbug	Map_Spring,	id_Springs,	$10,	3,	make_art_tile(ArtTile_Spring_Vertical,0,0)
+	dbug	Map_Spring,	id_Springs,	$12,	3,	make_art_tile(ArtTile_Spring_Vertical,1,0)
 	dbug	Map_Bomb,	id_Bomb,	0,	0,	make_art_tile(ArtTile_Bomb,0,0)
 	dbug	Map_Orb,	id_Orbinaut,	0,	0,	make_art_tile(ArtTile_SBZ_Orbinaut,0,0)
 	dbug	Map_Cat,	id_Caterkiller,	0,	0,	make_art_tile(ArtTile_SBZ_Caterkiller,1,0)
