@@ -318,18 +318,18 @@ GameProgram:
 		beq.w	GameInit	; if yes, branch
 
 CheckSumCheck:
-		movea.l	#EndOfHeader,a0	; start	checking bytes after the header	($200)
-		movea.l	#RomEndLoc,a1	; stop at end of ROM
-		move.l	(a1),d0
-		moveq	#0,d1
-
-.loop:
-		add.w	(a0)+,d1
-		cmp.l	a0,d0
-		bhs.s	.loop
-		movea.l	#Checksum,a1	; read the checksum
-		cmp.w	(a1),d1		; compare checksum in header to ROM
-		bne.w	CheckSumError	; if they don't match, branch
+;		movea.l	#EndOfHeader,a0	; start	checking bytes after the header	($200)
+;		movea.l	#RomEndLoc,a1	; stop at end of ROM
+;		move.l	(a1),d0
+;		moveq	#0,d1
+;
+;.loop:
+;		add.w	(a0)+,d1
+;		cmp.l	a0,d0
+;		bhs.s	.loop
+;		movea.l	#Checksum,a1	; read the checksum
+;		cmp.w	(a1),d1		; compare checksum in header to ROM
+;		bne.w	CheckSumError	; if they don't match, branch
 
 CheckSumOk:
 		lea	(v_crossresetram).w,a6
