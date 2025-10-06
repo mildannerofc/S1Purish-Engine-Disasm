@@ -19,7 +19,7 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Eggman and S Monitor are now functional;
 * Debug Mode fixed placing items.
 ## Credits
-* Mildanner - Disassembly Owner, Palette Editor
+* Mildanner - Disassembly Modifier, Palette Editor
 * Vladikcomper - Mega PCM 2 and Error Handler
 * SCHG - Fixing & Improving Game Code
 * Mercury - ReadySonic
