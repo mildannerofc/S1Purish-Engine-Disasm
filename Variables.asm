@@ -343,7 +343,7 @@ v_invinc:		ds.b	1		; invinciblity status (00 = no; 01 = yes)
 v_shoes:		ds.b	1		; speed shoes status (00 = no; 01 = yes)
 v_unused1:		ds.b	1		; an unused fourth player status (Goggles?)
 v_copysonicspeed:	equ $FFFFF63C	; Copy of sonic's speed
-v_jumpdash:		equ $FFFFF603	; Copy of sonic's speed
+v_jumpdash:		equ $FFFFF603	; Jump dash
 
 v_lastlamp:		ds.b	2		; number of the last lamppost you hit
 v_lamp_xpos:		ds.w	1		; x-axis for Sonic to respawn at lamppost
