@@ -14,6 +14,7 @@
 EnableSRAM	  = 0	; change to 1 to enable SRAM
 BackupSRAM	  = 1
 AddressSRAM	  = 3	; 0 = odd+even; 2 = even only; 3 = odd only
+DebugBuild	= 0		; 0 = disabled 1 = enabled
 SHCBuild	= 0		; change to 1 for enabling shc splash screen
 
 ; Change to 0 to build the original version of the game, dubbed REV00
@@ -2729,6 +2730,11 @@ Level_SkipTtlCard:
 		bsr.w	PalLoad_Fade	; load Sonic's palette
 		bsr.w	LevelSizeLoad
 		bsr.w	DeformLayers
+		if ~~DebugBuild          ; Assemble this if DebugBuild is 1
+        ; ... other code for DebugBuild = 1
+		else                   ; Assemble this if DebugBuild is 0
+		move.b	#1,(f_debugmode).w ; enable debug mode
+		endif
 		bset	#2,(v_fg_scroll_flags).w
 		bsr.w	LevelDataLoad ; load block mappings and palettes
 		bsr.w	LoadTilesFromStart
