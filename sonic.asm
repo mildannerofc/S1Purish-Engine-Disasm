@@ -14,6 +14,7 @@
 EnableSRAM	  = 0	; change to 1 to enable SRAM
 BackupSRAM	  = 1
 AddressSRAM	  = 3	; 0 = odd+even; 2 = even only; 3 = odd only
+SHCBuild	= 0		; change to 1 for enabling shc splash screen
 
 ; Change to 0 to build the original version of the game, dubbed REV00
 ; Change to 1 to build the later vesion, dubbed REV01, which includes various bugfixes and enhancements
@@ -1920,7 +1921,11 @@ GM_Title:
 		move.w	#$8720,(a6)	; set background colour (palette line 2, entry 0)
 		clr.b	(f_wtr_state).w
 		bsr.w	ClearScreen
-;        jsr 	SHC		; Only use this code if you are joining SHC.
+		if ~~SHCBuild          ; Assemble this if SHCBuild is 1
+        ; ... other code for SHCBuild = 1
+		else                   ; Assemble this if SHCBuild is 0
+        jsr     SHC    ; Now, code is here for disabled build
+		endif
 
 		clearRAM v_objspace
 
