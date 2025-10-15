@@ -1,0 +1,40 @@
+name: Build Purish ROM
+
+on:
+  push:
+    branches:
+      - main
+
+    paths-ignore:
+      - '.gitattributes'
+      - '.gitignore'
+      - 'README.md'
+      - 'LICENSE'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set branch variable
+        shell: pwsh
+        run: |
+          $branch = $env:GITHUB_REF -replace 'refs/heads/', ''
+          echo "BRANCH_NAME=$branch" >> $env:GITHUB_ENV
+
+      - name: Run build.bat
+        shell: cmd
+        run: |
+          cd /d %GITHUB_WORKSPACE%
+          build.bat
+
+      - name: Upload ROMs
+        uses: actions/upload-artifact@v4
+        with:
+          name: ROMs-${{ env.BRANCH_NAME }}
+          path: |
+            s1purish.bin
