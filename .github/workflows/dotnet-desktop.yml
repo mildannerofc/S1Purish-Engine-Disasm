@@ -1,0 +1,45 @@
+name: Build ROMs
+
+# This workflow is triggered on every push to the `main` branch.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  # You can also trigger the workflow manually from the Actions tab.
+  workflow_dispatch:
+
+jobs:
+  build:
+    # Use a fresh Ubuntu runner to execute the build steps.
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the build environment.
+      # Most Sonic disassemblies use the Macro Assembler AS.
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc make lua5.3
+          # Some projects may also require other packages like `wine`.
+          # Check the project's build instructions for specific needs.
+
+      # Step 3: Run the build script.
+      # Many GitHub disassemblies include a build.sh or build.bat script.
+      - name: Run build script
+        # Assumes a Linux shell script named build.sh exists in the repo root.
+        run: ./build.bat
+
+      # Step 4: Upload the compiled ROM as a workflow artifact.
+      # The final ROM name (e.g., 'Sonic.bin') depends on the project's build script.
+      - name: Upload ROM artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sonic-rom
+          path: s1purish.bin # Replace with your project's output filename.
