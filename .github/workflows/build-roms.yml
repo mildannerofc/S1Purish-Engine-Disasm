@@ -35,7 +35,7 @@ jobs:
       - name: Upload ROMs
         uses: actions/upload-artifact@v4
         with:
-          name: ROMS }}
+          name: ROMs
           path: |
             s1purish.bin
             s1purish.debug.bin
