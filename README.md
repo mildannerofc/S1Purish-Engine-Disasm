@@ -22,6 +22,7 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Mildanner - Disassembly Modifier, Palette Editor
 * Vladikcomper - Mega PCM 2 and Error Handler
 * SCHG - Fixing & Improving Game Code
+* TheBlad768 - The action build ROM from S.C.E modified to work on Sonic 1 disassembly
 * Mercury - ReadySonic
 * Selbi - Sonic CD SFX Jump
 * ProjectFM - Jump Dash Code
