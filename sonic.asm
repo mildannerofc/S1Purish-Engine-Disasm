@@ -9229,7 +9229,11 @@ SoundDriver:	include "s1.sounddriver.asm"
 
 ; end of 'ROM'
 
-SHC:    binclude "SHC_Splash.bin"
+		if ~~SHCBuild          ; Assemble this if SHCBuild is 1
+        ; ... other code for SHCBuild = 1
+		else                   ; Assemble this if SHCBuild is 0
+        SHC:    binclude "SHC_Splash.bin"
+		endif
 
 		even
 		
