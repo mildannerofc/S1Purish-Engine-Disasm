@@ -35,6 +35,6 @@ jobs:
       - name: Upload ROMs
         uses: actions/upload-artifact@v4
         with:
-          name: ROMs-${{ env.BRANCH_NAME }}
+          name: Build }}
           path: |
             s1purish.bin
