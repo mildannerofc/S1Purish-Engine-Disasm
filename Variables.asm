@@ -52,6 +52,7 @@ v_ttlcardoval	= v_titlecard+object_size*3	; object variable space for the title 
 v_gameovertext1	= v_objspace+object_size*2	; object variable space for the "GAME"/"TIME" in "GAME OVER"/"TIME OVER" text ($40 bytes)
 v_gameovertext2	= v_objspace+object_size*3	; object variable space for the "OVER" in "GAME OVER"/"TIME OVER" text ($40 bytes)
 
+v_spindust	= v_objspace+object_size*4	; object variable space for the spin dash dust ($40 bytes)
 v_shieldobj	= v_objspace+object_size*6	; object variable space for the shield ($40 bytes)
 v_starsobj1	= v_objspace+object_size*8	; object variable space for the invincibility stars #1 ($40 bytes)
 v_starsobj2	= v_objspace+object_size*9	; object variable space for the invincibility stars #2 ($40 bytes)
