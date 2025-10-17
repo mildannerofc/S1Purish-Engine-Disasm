@@ -131,6 +131,8 @@ obSolid:	equ ob2ndRout ; solid status flag
 flashtime:	equ $30	; time between flashes after getting hit
 invtime:	equ $32	; time left for invincibility
 shoetime:	equ $34	; time left for speed shoes
+spindash_flag:	equ $39	; spin dash flag
+spindash_counter:	equ $3A	; spin dash counter
 stick_to_convex:equ objoff_38
 standonobject:	equ $3D	; object Sonic stands on
 
