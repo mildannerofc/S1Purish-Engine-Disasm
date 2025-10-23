@@ -26,7 +26,7 @@ This is not "Sonic 1 Definitive", this is Sonic 1 Engine Base that Mildanner mad
 * Mercury - ReadySonic
 * Selbi - Sonic CD SFX Jump
 * ProjectFM - Jump Dash Code
-* Hame - Mean Bean SMPS Port
+* Nineko - Mean Bean SMPS Port
 * Techokami - Custom Font HUD
 * CartoonsAnimate22 - Sprites
 * DarkShamilKhan - Inspiration
