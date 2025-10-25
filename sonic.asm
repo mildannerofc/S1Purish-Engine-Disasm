@@ -16,6 +16,7 @@ BackupSRAM	  = 1
 AddressSRAM	  = 3	; 0 = odd+even; 2 = even only; 3 = odd only
 DebugBuild	= 0		; 0 = disabled 1 = enabled
 SHCBuild	= 0		; change to 1 for enabling shc splash screen
+SmoothFadeSega = 0	; 0 = original 1 = smooth
 
 ; Change to 0 to build the original version of the game, dubbed REV00
 ; Change to 1 to build the later vesion, dubbed REV01, which includes various bugfixes and enhancements
@@ -1836,7 +1837,12 @@ GM_Sega:
 		move.b	#bgm_Stop,d0
 		bsr.w	PlaySound_Special ; stop music
 		bsr.w	ClearPLC
+		if	SmoothFadeSega = 1
+		bsr.w	PaletteWhiteOut
+		else
 		bsr.w	PaletteFadeOut
+		endif
+		even
 		lea	(vdp_control_port).l,a6
 		move.w	#$8004,(a6)	; use 8-colour mode
 		move.w	#$8200+(vram_fg>>10),(a6) ; set foreground nametable address
