@@ -1837,7 +1837,7 @@ GM_Sega:
 		move.b	#bgm_Stop,d0
 		bsr.w	PlaySound_Special ; stop music
 		bsr.w	ClearPLC
-		if	~~SmoothFadeSega
+		if	SmoothFadeSega = 1
 		bsr.w	PaletteWhiteOut
 		else
 		bsr.w	PaletteFadeOut
