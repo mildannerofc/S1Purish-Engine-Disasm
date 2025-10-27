@@ -38,19 +38,36 @@ PSG_Index:
 		dc.l PSG1, PSG2, PSG3
 		dc.l PSG4, PSG5, PSG6
 		dc.l PSG7, PSG8, PSG9
-PSG1:		binclude "sound/psg/psg1.bin"
-PSG2:		binclude "sound/psg/psg2.bin"
-PSG3:		binclude "sound/psg/psg3.bin"
-PSG4:		binclude "sound/psg/psg4.bin"
-PSG6:		binclude "sound/psg/psg6.bin"
-PSG5:		binclude "sound/psg/psg5.bin"
-PSG7:		binclude "sound/psg/psg7.bin"
-PSG8:		binclude "sound/psg/psg8.bin"
-PSG9:		binclude "sound/psg/psg9.bin"
-PSGA:		binclude "sound/psg/psgA.bin"
-PSGB:		binclude "sound/psg/psgB.bin"
-PSGC:		binclude "sound/psg/psgC.bin"
-PSGD:		binclude "sound/psg/psgD.bin"
+		dc.l PSGA, PSGB, PSGC
+		dc.l PSGD
+
+PSG1:		dc.b 0,0,0,1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,$80
+
+PSG2:		dc.b 0,2,4,6,8,$10,$80
+
+PSG3:		dc.b 0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,$80
+
+PSG4:		dc.b 0,0,2,3,4,4,5,5,5,6,$80
+
+PSG6:		dc.b 3,3,3,2,2,2,2,1,1,1,0,0,0,0,$80
+
+PSG5:		dc.b 0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2
+		dc.b 2,2,2,3,3,3,3,3,3,3,3,4,$80
+
+PSG7:		dc.b 0,0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,3,3,3,4,4,4,5,5,5,6,7,$80
+
+PSG8:		dc.b 0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5
+		dc.b 5,5,6,6,6,6,6,7,7,7,$80
+
+PSG9:		dc.b 0,1,2,3,4,5,6,7,8,9,$A,$B,$C,$D,$E,$F,$80
+
+PSGA:		dc.b 4,1,4,1,4,1,4,1,4,1,4,1,4,1,$F,$80
+
+PSGB:		dc.b 0,0,0,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,$80
+
+PSGC:		dc.b 0,0,1,1,2,2,2,1,1,0,$F,$80
+
+PSGD:		dc.b 1,3,5,7,7,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,$80
 
 ; ---------------------------------------------------------------------------
 ; New tempos for songs during speed shoes
