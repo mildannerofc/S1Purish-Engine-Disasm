@@ -17,6 +17,7 @@ AddressSRAM	  = 3	; 0 = odd+even; 2 = even only; 3 = odd only
 DebugBuild	= 0		; 0 = disabled 1 = enabled
 SmoothFadeSega = 0	; 0 = original 1 = smooth
 LevSelSFX	= 0		; 0 = disabled 1 = enabled
+S2DrawSnd	= 1		; 0 = $80 1 = $00
 SHCBuild	= 0		; change to 1 for enabling shc splash screen
 
 ; Change to 0 to build the original version of the game, dubbed REV00
@@ -2500,7 +2501,11 @@ LevSel_DrawAll:
 LevSel_DrawSnd:
 		locVRAM	vram_bg+$C30		; sound test position on screen
 		move.w	(v_levselsound).w,d0
+		if S2DrawSnd = 1
+		addi.w	#$00,d0
+		else
 		addi.w	#$80,d0
+		endif
 		move.b	d0,d2
 		lsr.b	#4,d0
 		bsr.w	LevSel_ChgSnd	; draw 1st digit
