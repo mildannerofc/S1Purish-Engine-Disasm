@@ -14,11 +14,6 @@
 EnableSRAM	  = 0	; change to 1 to enable SRAM
 BackupSRAM	  = 1
 AddressSRAM	  = 3	; 0 = odd+even; 2 = even only; 3 = odd only
-DebugBuild	= 0		; 0 = disabled 1 = enabled
-SmoothFadeSega = 0	; 0 = original 1 = smooth
-LevSelSFX	= 0		; 0 = disabled 1 = enabled
-S2DrawSnd	= 1		; 0 = $80 1 = $00
-SHCBuild	= 0		; change to 1 for enabling shc splash screen
 
 ; Change to 0 to build the original version of the game, dubbed REV00
 ; Change to 1 to build the later vesion, dubbed REV01, which includes various bugfixes and enhancements
@@ -30,6 +25,16 @@ ZoneCount	  = 6	; discrete zones are: GHZ, MZ, SYZ, LZ, SLZ, and SBZ
 FixBugs		  = 0	; change to 1 to enable bugfixes
 
 zeroOffsetOptimization = 1	; if 1, makes a handful of zero-offset instructions smaller
+
+;=========================================================================
+; Mods and ROM Adjustments for build
+;=========================================================================
+
+DebugBuild	= 0		; 0 = disabled 1 = enabled
+SmoothFadeSega = 1	; 0 = original 1 = smooth
+LevSelSFX	= 1		; 0 = disabled 1 = enabled
+S2DrawSnd	= 1		; 0 = $80 1 = $00
+SHCBuild	= 0		; change to 1 for enabling shc splash screen
 
 	include "Debugger.asm"
 	include "MacroSetup.asm"
@@ -2414,7 +2419,7 @@ LevSel_Refresh:
 		move.w	d0,(v_levselitem).w ; set new selection
 		bsr.w	LevSelTextLoad	; refresh text
 		if LevSelSFX = 1
-		move.b	#$CD,d0
+		move.b	#sfx_Switch,d0
 		bsr.w	PlaySound_Special	; play beep sound
 		endif
 		rts	
@@ -2445,7 +2450,7 @@ LevSel_Refresh2:
 		move.w	d0,(v_levselsound).w ; set sound test number
 		bsr.w	LevSelTextLoad	; refresh text
 		if LevSelSFX = 1
-		move.b	#$CD,d0
+		move.b	#sfx_Switch,d0
 		bsr.w	PlaySound_Special	; play beep sound
 		endif
 
