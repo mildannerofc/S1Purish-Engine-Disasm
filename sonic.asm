@@ -34,6 +34,8 @@ DebugBuild	= 0		; 0 = disabled 1 = enabled
 
 SmoothFadeSega = 1	; 0 = original 1 = smooth
 
+OneHitBoss	= 0		; 0 = normal hit boss 1 = one hit boss
+
 LevSelSFX	= 1		; 0 = disabled 1 = enabled
 
 S2DrawSnd	= 1		; 0 = $80 1 = $00
