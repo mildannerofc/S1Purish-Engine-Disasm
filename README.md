@@ -11,6 +11,7 @@ If you want to use this modified disassembly base for your own work (Even for yo
 * PAL fix SMPS;
 * Sonic Jump Dash Ability;
 * Clap and Cymbal added to Mega PCM;
+* Unique ROM adjustments and settings while building;
 * Extra music 94-9F;
 * Clean palette in half;
 * Smooth special stage;
