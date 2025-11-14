@@ -28,7 +28,11 @@ BossSpringYard_Main:	; Routine 0
 		move.w	obX(a0),objoff_30(a0)
 		move.w	obY(a0),objoff_38(a0)
 		move.b	#$F,obColType(a0)
+		if	OneHitBoss = 1
+		move.b	#1,obColProp(a0) ; set number of hits to 1
+		else
 		move.b	#8,obColProp(a0) ; set number of hits to 8
+		endif
 		lea	BossSpringYard_ObjData(pc),a2
 		movea.l	a0,a1
 		moveq	#3,d1

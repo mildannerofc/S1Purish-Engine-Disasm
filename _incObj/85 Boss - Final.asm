@@ -99,7 +99,11 @@ loc_19E3E:
 
 loc_19E5A:
 		move.w	#0,objoff_34(a0)
+		if	OneHitBoss = 1
+		move.b	#1,obColProp(a0) ; set number of hits to 8
+		else
 		move.b	#8,obColProp(a0) ; set number of hits to 8
+		endif
 		move.w	#-1,objoff_30(a0)
 
 BossFinal_Eggman:	; Routine 2
