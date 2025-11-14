@@ -31,9 +31,13 @@ zeroOffsetOptimization = 1	; if 1, makes a handful of zero-offset instructions s
 ;=========================================================================
 
 DebugBuild	= 0		; 0 = disabled 1 = enabled
+
 SmoothFadeSega = 1	; 0 = original 1 = smooth
+
 LevSelSFX	= 1		; 0 = disabled 1 = enabled
+
 S2DrawSnd	= 1		; 0 = $80 1 = $00
+
 SHCBuild	= 0		; change to 1 for enabling shc splash screen
 
 	include "Debugger.asm"
