@@ -2763,7 +2763,7 @@ SoundA2:	include "sound/sfx/SndA2.asm"
 		even
 SoundA3:	include "sound/sfx/SndA3 - Death.asm"
 		even
-SoundA4:	include "sound/sfx/SndA4 - Skid.asm"
+SoundA4:	include "sound/sfx/Sonic_CDSkid.asm"
 		even
 SoundA5:	include "sound/sfx/SndA5.asm"
 		even
