@@ -17,7 +17,6 @@ If you want to use this modified disassembly base for your own work (Even for yo
 * Smooth special stage;
 * ASCII Level Select;
 * Speed Cap Removed;
-* Sonic 1 Prototype Drums;
 * Extended Debug Mode;
 * New 2 water palette for Labyrinth Zone and SBZ 3;
 * Eggman and S Monitor are now functional;
