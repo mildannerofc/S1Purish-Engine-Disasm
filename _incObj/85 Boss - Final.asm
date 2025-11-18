@@ -200,6 +200,8 @@ loc_19F6A:
 		tst.b	objoff_35(a0)
 		bne.s	loc_19F88
 		subq.b	#1,obColProp(a0)
+		tst.b	obColProp(a0)	; has the boss been defeated?
+		beq.s	loc_19F9C		; if so, don't let it be hit again.
 		move.b	#$64,objoff_35(a0)
 		move.w	#sfx_HitBoss,d0
 		jsr	(PlaySound_Special).l	; play boss damage sound
