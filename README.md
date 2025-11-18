@@ -26,7 +26,7 @@ If you want to use this modified disassembly base for your own work (Even for yo
 * Vladikcomper - Mega PCM 2 and Error Handler
 * SCHG - Fixing & Improving Game Code
 * TheBlad768 - The action build ROM from S.C.E modified to work on Sonic 1 disassembly
-* Mercury - ReadySonic
+* Mercury - ReadySonic and some fixes implemented
 * Selbi - Sonic CD SFX Jump
 * ProjectFM - Jump Dash Code
 * Nineko - Mean Bean SMPS Port
