@@ -34,7 +34,7 @@ DebugBuild	= 0		; 0 = disabled 1 = enabled
 
 SmoothFadeSega = 1	; 0 = original 1 = smooth
 
-HUDBlinking = 1		; 0 = red 1 = blink
+HUDBlinking = 0		; 0 = red 1 = blink
 
 OneHitBoss	= 0		; 0 = normal hit boss 1 = one hit boss
 
