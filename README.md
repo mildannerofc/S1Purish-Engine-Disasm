@@ -28,6 +28,7 @@ If you want to use this modified disassembly base for your own work (Even for yo
 * TheBlad768 - The action build ROM from S.C.E modified to work on Sonic 1 disassembly
 * Mercury - ReadySonic and some fixes implemented
 * Selbi - Sonic CD SFX Jump
+* Quickman - Fix HUD Blinking
 * ProjectFM - Jump Dash Code
 * Nineko - Mean Bean SMPS Port
 * Techokami - Custom Font HUD
