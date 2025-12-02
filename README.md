@@ -5,7 +5,7 @@ A modified disassembly of Sonic 1 with Purish entities and modifications.
 
 This is not any "Sonic 1 Definitive" at all, according to the code improvement and adjustments (Do not call it "Sonic 1 Definitive" anyways). This is Sonic 1 Engine Base that Mildanner made by modifying it how does he like to be used in a ROM Hack Structure but with improved stuff.
 
-If you want to use this modified disassembly base for your own work (Even for your ROM Hack concept), plesae do **not cut off the credits of Purish Engine. Also includes the repository owner.**
+If you want to use this modified disassembly base for your own work (Even for your ROM Hack concept), please do **not cut off the credits of Purish Engine. Also includes the repository owner.**
 
 ## Known Modifications in Engine
 * PAL fix SMPS;
