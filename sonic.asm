@@ -9276,6 +9276,8 @@ SoundDriver:	include "s1.sounddriver.asm"
         SHC:    binclude "SHC_Splash.bin"
 		endif
 
+		include "sound/UniBank.asm"
+
 		even
 		
 EndOfRom:
