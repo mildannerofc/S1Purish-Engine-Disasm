@@ -34,6 +34,8 @@ DebugBuild	= 0		; 0 = disabled 1 = enabled
 
 SmoothFadeSega = 1	; 0 = original 1 = smooth
 
+HideHUDEnding = 1	; 0 = hud in ending 1 = no hud
+
 HUDBlinking = 0		; 0 = red 1 = blink
 
 OneHitBoss	= 0		; 0 = normal hit boss 1 = one hit boss
@@ -3753,7 +3755,10 @@ GM_Ending:
 End_LoadData:
 		moveq	#plcid_Ending,d0
 		bsr.w	QuickPLC	; load ending sequence patterns
+		if HideHUDEnding = 1
+		else
 		jsr	(Hud_Base).l
+		endif
 		bsr.w	LevelSizeLoad
 		bsr.w	DeformLayers
 		bset	#2,(v_fg_scroll_flags).w
@@ -3778,7 +3783,10 @@ End_LoadSonic:
 		move.b	#1,(f_lockctrl).w ; lock controls
 		move.w	#(btnL<<8),(v_jpadhold2).w ; move Sonic to the left
 		move.w	#$F800,(v_player+obInertia).w ; set Sonic's speed
+		if HideHUDEnding = 1
+		else
 		move.b	#id_HUD,(v_hud).w ; load HUD object
+		endif
 		jsr	(ObjPosLoad).l
 		jsr	(ExecuteObjects).l
 		jsr	(BuildSprites).l
