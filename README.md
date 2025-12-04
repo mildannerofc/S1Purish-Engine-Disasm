@@ -7,7 +7,7 @@ This is not any "Sonic 1 Definitive" at all, according to the code improvement a
 
 If you want to use this modified disassembly base for your own work (Even for your ROM Hack concept), please do **not cut off the credits of Purish Engine. Also includes the repository owner.**
 
-## Known Modifications in Engine (ROM Hack)
+## Known Modifications in Engine (ROM Hack Base)
 * PAL fix SMPS;
 * Sonic Jump Dash Ability;
 * Clap and Cymbal added to Mega PCM;
