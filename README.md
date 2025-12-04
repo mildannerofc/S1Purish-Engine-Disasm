@@ -7,7 +7,7 @@ This is not any "Sonic 1 Definitive" at all, according to the code improvement a
 
 If you want to use this modified disassembly base for your own work (Even for your ROM Hack concept), please do **not cut off the credits of Purish Engine. Also includes the repository owner.**
 
-## Known Modifications in Engine
+## Known Modifications in Engine (ROM Hack)
 * PAL fix SMPS;
 * Sonic Jump Dash Ability;
 * Clap and Cymbal added to Mega PCM;
@@ -47,7 +47,7 @@ If you want to use this modified disassembly base for your own work (Even for yo
 * Paint.NET - Manual image editing
 * Flex2 - Sprite editing
 * ClownMapEd - Simple art editing
-* HivePal - Change palettes
-* SMPSConv - Music conversions
+* HivePal - Changing palettes
+* SMPSConv - Music conversions from other SMPS Games
 
 Original disassembly is in [here](https://github.com/sonicretro/s1disasm)
