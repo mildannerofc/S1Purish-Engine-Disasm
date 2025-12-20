@@ -36,6 +36,8 @@ SmoothFadeSega = 1	; 0 = original 1 = smooth
 
 HideHUDEnding = 1	; 0 = hud in ending 1 = no hud
 
+AltGotThrough = 0	; 0 = disabled 1 = enabled
+
 HUDBlinking = 0		; 0 = red 1 = blink
 
 OneHitBoss	= 0		; 0 = normal hit boss 1 = one hit boss
