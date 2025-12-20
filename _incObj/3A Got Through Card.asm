@@ -252,6 +252,21 @@ loc_C766:	; Routine $10
 		;				routine, frame number
 
 Got_Config:	dc.w 4,		$124,	$BC			; "SONIC HAS"
+		if ~~AltGotThrough
+        dc.b 				2,   0
+        dc.w $FEE0, $120, $D0 ; PASSED
+        dc.b 2,    1
+        dc.w $40C, $14C, $D6 ; act number
+        dc.b 2,    6
+        dc.w $520,    $120,    $122 ; score
+        dc.b 2,    2
+        dc.w $540,    $120,    $F2 ; time bonus
+        dc.b 2,    3
+        dc.w $560,    $120,    $102 ; ring bonus
+        dc.b 2,    4
+        dc.w $20C, $14C, $CC ; The blue bit of the card
+        dc.b 2,    5
+		else
 		dc.b 				2,	0
 
 		dc.w -$120,	$120,	$D0			; "PASSED"
@@ -271,3 +286,4 @@ Got_Config:	dc.w 4,		$124,	$BC			; "SONIC HAS"
 
 		dc.w $20C,	$14C,	$CC			; oval
 		dc.b 				2,	5
+		endif
